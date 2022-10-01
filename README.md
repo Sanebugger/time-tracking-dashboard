@@ -1,3 +1,12 @@
+# its a frontend challenge(which i have completed)
+https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw/hub/time-tracking-dashboard-syJ0gkIIfI
+
+# preview:
+
+![Screenshot from 2022-10-01 10-28-57](https://user-images.githubusercontent.com/96644306/193393445-e0e8cd1a-fce1-4376-be83-320bc2fdbc9b.png)
+
+
+
 # Frontend Mentor - Time tracking dashboard
 
 ![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)
