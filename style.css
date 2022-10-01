@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100&family=Rubik&display=swap');
+:root{
+    /* ### Neutral */
+--Very_dark_blue: hsl(227, 45%, 8%);
+--Dark_blue: hsl(236, 65%, 24%);
+--Desaturated_blue: hsl(235, 45%, 61%);
+--Pale_Blue: hsl(236, 100%, 87%);
+
+    --Blue: hsl(246, 80%, 60%);
+    --work: hsl(15, 100%, 70%);
+    --play: hsl(195, 74%, 62%);
+    --study: hsl(348, 100%, 68%);
+    --exercise: hsl(145, 58%, 55%);
+    --social: hsl(264, 64%, 52%);
+    --selfcare: hsl(43, 84%, 65%);  
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* /////////////////////////////////////////////////// */
+body{
+    background-color: var(--Very_dark_blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+.container{
+    width: 70%;
+    height: 70vh;
+    background-color: var(--Very_dark_blue);
+    /* background: white; */
+    border-radius: 15px;
+}
+/* /////////////////////////////////////////////////// */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-gap: 15px;
+  
+    padding: 15px 15px 15px 15px;
+    grid-template-areas: 
+          "profilediv workdiv playdiv studydiv"
+          "profilediv exercisediv socialdiv selfcarediv"
+    ;
+}
+
+.profilediv{
+    grid-area: profilediv;
+    background: var(--Dark_blue);
+    border-radius: 15px;
+    
+}
+.workdiv{
+    grid-area: workdiv;
+    background: var(--work);
+    border-radius: 15px;
+    background-image: url('./images/icon-work.svg');
+    /* background-repeat: no-repeat;
+    background-position: top right; */
+    /* background-size: cover; */
+    background-size: 90px 90px;
+}
+.playdiv{
+    grid-area: playdiv;
+    background: var(--play);
+    border-radius: 15px;
+    background-image: url('./images/icon-play.svg');
+    background-size: 90px 90px;
+}
+.studydiv{
+    grid-area: studydiv;
+    background: var(--study);
+    border-radius: 15px;
+    background-image: url('./images/icon-study.svg');
+    background-size: 90px 90px;
+}
+.exercisediv{
+    grid-area: exercisediv;
+    background: var(--exercise);
+    border-radius: 15px;
+    background-image: url('./images/icon-exercise.svg');
+    background-size: 90px 90px;
+}
+.socialdiv{
+    grid-area: socialdiv;
+    background: var(--social);
+    border-radius: 15px;
+    background-image: url('./images/icon-social.svg');
+    background-size: 90px 90px;
+}
+.selfcarediv{
+    grid-area: selfcarediv;
+    background: var(--selfcare);
+    border-radius: 15px;
+    background-image: url('./images/icon-self-care.svg');
+    background-size: 90px 90px;
+}
+/* ////////////////////////////////////////////////////////// */
+/* we have explicitly define this whie making it responsive */
+.details{
+    height: 83%;
+    background-color: var(--Dark_blue);
+    position: relative;
+    bottom: -50px;
+    border-radius: 15px;
+}
+/* /////////////////////////////////////////////////////////////// */
+.profiledivdetails{
+    height: 70%;
+    background-color: var(--Blue);
+    /* position: relative;
+    bottom: -50px; */
+    border-radius: 15px;
+}
+/* /////////////////////////////////////////////////////////////// */
+.details{
+    display: flex;
+    flex-direction: column;
+    padding:20px 25px;
+    color: white;
+}
+.details-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    font-family: 'Rubik', sans-serif;
+    /* font-weight: bold; */
+    letter-spacing: 3px;
+}
+.time{
+    font-size: 62px;
+    margin-bottom: 12px;
+    font-family: 'Rubik', sans-serif;
+}
+.prevdata{
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+
+}
+.fa-solid{
+    font-size: x-large;
+}
+
+
+
+
+
+
+/* /////////////////////////////// */
+
+@media screen and (max-width: 480px) {
+   
+    .container{
+        grid-template-columns: 1fr ;
+        grid-template-rows: 4fr 2fr 2fr 2fr 2fr 2fr 2fr ;
+        grid-gap: 50px;
+         
+         grid-template-areas: 
+         "profilediv"
+         "workdiv"
+         "playdiv"
+         "studydiv"
+         "exercisediv"
+         "socialdiv"
+         "selfcarediv"
+         ;
+        }
+    .details{
+            height: 100%;
+            background-color: var(--Dark_blue);
+            position: relative;
+            bottom: -50px;
+            border-radius: 15px;
+        }
+    .details-top{
+            margin-bottom: 20px;
+            font-family: 'Rubik', sans-serif;
+            letter-spacing: 3px;
+        }
+    .time{
+            font-size: 40px;
+            margin-bottom: 5px;
+            font-family: 'Rubik', sans-serif;
+        }
+
+  }
